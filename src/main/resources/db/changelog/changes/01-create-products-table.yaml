@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-products-table
+      author: Bohun
+      changes:
+        - createTable:
+            tableName: products
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: product_name_Id
+                  type: varchar(255)
+              - column:
+                  name: isbn
+                  type: varchar(255)
+                  constraints:
+                    unique: true
+              - column:
+                  name: price
+                  type: DECIMAL
+              - column:
+                  name: description
+                  type: varchar(512)
+              - column:
+                  name: cover_image
+                  type: varchar(255)
+              - column:
+                  name: is_deleted
+                  type: boolean
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false

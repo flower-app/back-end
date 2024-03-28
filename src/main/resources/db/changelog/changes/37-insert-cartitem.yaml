@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-shoppingCarts
+      author: Bohun
+      changes:
+        - insert:
+            tableName: cart_items
+            columns:
+              - column: { name: shopping_cart_id, value: "1" }
+              - column: { name: quantity, value: "1" }
+              - column: { name: product_id, value: "1" }
+        - insert:
+            tableName: cart_items
+            columns:
+              - column: { name: shopping_cart_id, value: "2" }
+              - column: { name: quantity, value: "1" }
+              - column: { name: product_id, value: "1" }

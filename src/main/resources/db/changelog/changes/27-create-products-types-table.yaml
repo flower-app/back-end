@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-product-type-table
+      author: Bohun
+      changes:
+        - createTable:
+            tableName: product_types
+            columns:
+              - column:
+                  name: product_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: FK_products_types_product
+                    referencedTableName: products
+                    referencedColumnNames: id
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: type_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: FK_products_types_type
+                    referencedTableName: types
+                    referencedColumnNames: id
+                    primaryKey: true
+                    nullable: false

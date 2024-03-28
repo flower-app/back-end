@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-discounts
+      author: Bohun
+      changes:
+        - insert:
+            tableName: discounts
+            columns:
+              - column: { name: name, value: "0" }
+              - column: { name: description, value: "0% discount for customers" }
+        - insert:
+            tableName: discounts
+            columns:
+              - column: { name: name, value: "10" }
+              - column: { name: description, value: "minimum discount for clients of 10%" }
+        - insert:
+            tableName: discounts
+            columns:
+              - column: { name: name, value: "20" }
+              - column: { name: description, value: "average customer discount 20%" }
+        - insert:
+            tableName: discounts
+            columns:
+              - column: { name: name, value: "25" }
+              - column: { name: description, value: "average customer discount 25%" }
+        - insert:
+            tableName: discounts
+            columns:
+              - column: { name: name, value: "35" }
+              - column: { name: description, value: "35% discount for customers" }
+        - insert:
+            tableName: discounts
+            columns:
+              - column: { name: name, value: "50" }
+              - column: { name: description, value: "50% discount for customers" }
+        - insert:
+            tableName: discounts
+            columns:
+              - column: { name: name, value: "75" }
+              - column: { name: description, value: "75% discount for customers" }

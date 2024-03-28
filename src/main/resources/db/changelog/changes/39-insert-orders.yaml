@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-orders
+      author: Bohun
+      changes:
+        - insert:
+            tableName: orders
+            columns:
+              - column: { name: user_id, value: "1" }
+              - column: { name: status, value: "PENDING" }
+              - column: { name: total, value: "15" }
+              - column: { name: country, value: "Ukraine" }
+              - column: { name: city, value: "Kyiv" }
+              - column: { name: street, value: "Mrii Street 34" }
+              - column: { name: apartment, value: "6" }
+              - column: { name: cart_number, value: "344556454334" }
+              - column: { name: mm_yy, value: "12/12" }
+              - column: { name: cvv_code, value: "657" }
+              - column: { name: order_date, value: "2024-01-03T12:00:00" }
+        - insert:
+            tableName: orders
+            columns:
+              - column: { name: user_id, value: "2" }
+              - column: { name: status, value: "PROCESSING" }
+              - column: { name: total, value: "39" }
+              - column: { name: country, value: "Ukraine" }
+              - column: { name: city, value: "Kyiv" }
+              - column: { name: street, value: "Mrii Street 35" }
+              - column: { name: apartment, value: "6" }
+              - column: { name: cart_number, value: "344556454334" }
+              - column: { name: mm_yy, value: "12/12" }
+              - column: { name: cvv_code, value: "657" }
+              - column: { name: order_date, value: "2024-01-03T12:00:00" }

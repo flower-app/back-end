@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-sizes
+      author: Bohun
+      changes:
+        - insert:
+            tableName: sizes
+            columns:
+              - column: { name: name, value: "small" }
+              - column: { name: description, value: "S" }
+        - insert:
+            tableName: sizes
+            columns:
+              - column: { name: name, value: "Medium" }
+              - column: { name: description, value: "M" }
+        - insert:
+            tableName: sizes
+            columns:
+              - column: { name: name, value: "Large" }
+              - column: { name: description, value: "L" }

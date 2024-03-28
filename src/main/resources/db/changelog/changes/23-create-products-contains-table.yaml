@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-product-contain-table
+      author: Bohun
+      changes:
+        - createTable:
+            tableName: product_contains
+            columns:
+              - column:
+                  name: product_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: FK_products_contains_product
+                    referencedTableName: products
+                    referencedColumnNames: id
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: contain_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: FK_products_contains_contain
+                    referencedTableName: contains
+                    referencedColumnNames: id
+                    primaryKey: true
+                    nullable: false

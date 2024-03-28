@@ -1,0 +1,45 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-color
+      author: Bohun
+      changes:
+        - insert:
+            tableName: colors
+            columns:
+              - column: { name: name, value: "White" }
+              - column: { name: description, value: "White flowers and pots" }
+        - insert:
+            tableName: colors
+            columns:
+              - column: { name: name, value: "Red" }
+              - column: { name: description, value: "Red flowers and pots" }
+        - insert:
+            tableName: colors
+            columns:
+              - column: { name: name, value: "Green" }
+              - column: { name: description, value: "Green flowers and pots" }
+        - insert:
+            tableName: colors
+            columns:
+              - column: { name: name, value: "Yellow" }
+              - column: { name: description, value: "Yellow flowers and pots" }
+        - insert:
+            tableName: colors
+            columns:
+              - column: { name: name, value: "Violet" }
+              - column: { name: description, value: "Violet flowers and pots" }
+        - insert:
+            tableName: colors
+            columns:
+              - column: { name: name, value: "Pink" }
+              - column: { name: description, value: "Pink flowers and pots" }
+        - insert:
+            tableName: colors
+            columns:
+              - column: { name: name, value: "Blue" }
+              - column: { name: description, value: "Blue flowers and pots" }
+        - insert:
+            tableName: colors
+            columns:
+              - column: { name: name, value: "Orange" }
+              - column: { name: description, value: "Orange flowers and pots" }

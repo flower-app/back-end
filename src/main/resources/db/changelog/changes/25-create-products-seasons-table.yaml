@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-product-season-table
+      author: Bohun
+      changes:
+        - createTable:
+            tableName: product_seasons
+            columns:
+              - column:
+                  name: product_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: FK_products_seasons_product
+                    referencedTableName: products
+                    referencedColumnNames: id
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: season_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: FK_products_seasons_season
+                    referencedTableName: discounts
+                    referencedColumnNames: id
+                    primaryKey: true
+                    nullable: false

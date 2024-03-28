@@ -1,0 +1,95 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-products-contains
+      author: Bohun
+      changes:
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "1" }
+              - column: { name: contain_id, value: "1" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "2" }
+              - column: { name: contain_id, value: "1" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "3" }
+              - column: { name: contain_id, value: "8" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "4" }
+              - column: { name: contain_id, value: "9" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "5" }
+              - column: { name: contain_id, value: "10" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "5" }
+              - column: { name: contain_id, value: "1" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "6" }
+              - column: { name: contain_id, value: "10" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "6" }
+              - column: { name: contain_id, value: "1" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "7" }
+              - column: { name: contain_id, value: "11" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "8" }
+              - column: { name: contain_id, value: "12" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "9" }
+              - column: { name: contain_id, value: "16" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "10" }
+              - column: { name: contain_id, value: "15" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "11" }
+              - column: { name: contain_id, value: "9" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "12" }
+              - column: { name: contain_id, value: "1" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "13" }
+              - column: { name: contain_id, value: "8" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "14" }
+              - column: { name: contain_id, value: "17" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "15" }
+              - column: { name: contain_id, value: "18" }
+        - insert:
+            tableName: product_contains
+            columns:
+              - column: { name: product_id, value: "16" }
+              - column: { name: contain_id, value: "19" }

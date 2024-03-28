@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-product-discount-table
+      author: Bohun
+      changes:
+        - createTable:
+            tableName: product_discounts
+            columns:
+              - column:
+                  name: product_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: FK_products_discounts_product
+                    referencedTableName: products
+                    referencedColumnNames: id
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: discount_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: FK_products_discounts_discount
+                    referencedTableName: discounts
+                    referencedColumnNames: id
+                    primaryKey: true
+                    nullable: false

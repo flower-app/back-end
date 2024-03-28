@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-users
+      author: Bohun
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: email, value: "admin@gmail.com" }
+              - column: { name: number_phone, value: "+0956782245" }
+              - column: { name: password, value: "12345678" }
+              - column: { name: first_name, value: "Admin1" }
+              - column: { name: last_name, value: "Admin2" }
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: email, value: "user@gmail.com" }
+              - column: { name: number_phone, value: "+0956578224" }
+              - column: { name: password, value: "12345678" }
+              - column: { name: first_name, value: "User1" }
+              - column: { name: last_name, value: "User2" }

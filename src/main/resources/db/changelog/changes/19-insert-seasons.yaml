@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-seasons
+      author: Bohun
+      changes:
+        - insert:
+            tableName: seasons
+            columns:
+              - column: { name: name, value: "Summer" }
+              - column: { name: description, value: "Bouquets and vases with pleasant light colors and summer flowers" }
+        - insert:
+            tableName: seasons
+            columns:
+              - column: { name: name, value: "Autumn" }
+              - column: { name: description, value: "Autumn colors and pink decoration" }
+        - insert:
+            tableName: seasons
+            columns:
+              - column: { name: name, value: "Winter" }
+              - column: { name: description, value: "White decoration and hints of winter" }
+        - insert:
+            tableName: seasons
+            columns:
+              - column: { name: name, value: "Spring" }
+              - column: { name: description, value: "Spring flowers in light decorated" }

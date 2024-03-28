@@ -1,0 +1,100 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-contain
+      author: Bohun
+      changes:
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Rose" }
+              - column: { name: description, value: "rose" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Marigold" }
+              - column: { name: description, value: "marigold" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Lily" }
+              - column: { name: description, value: "lily" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Violet" }
+              - column: { name: description, value: "violet" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Chamomile" }
+              - column: { name: description, value: "chamomile" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Carnation" }
+              - column: { name: description, value: "carnation" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Chrysanthemum" }
+              - column: { name: description, value: "chrysanthemum" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Hydrangea" }
+              - column: { name: description, value: "hydrangea" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Peony" }
+              - column: { name: description, value: "peony" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Daisies" }
+              - column: { name: description, value: "daisies" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Crotons" }
+              - column: { name: description, value: "crotons" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Calathea" }
+              - column: { name: description, value: "Crotons" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Boston" }
+              - column: { name: description, value: "boston" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Fern" }
+              - column: { name: description, value: "fern" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Ranunculus" }
+              - column: { name: description, value: "ranunculus" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Boston fern" }
+              - column: { name: description, value: "boston-fern" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "English ivy" }
+              - column: { name: description, value: "english-ivy" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Ficus benjamina" }
+              - column: { name: description, value: "ficus-benjamina" }
+        - insert:
+            tableName: contains
+            columns:
+              - column: { name: name, value: "Anturium" }
+              - column: { name: description, value: "anturium" }

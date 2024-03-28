@@ -1,0 +1,165 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-products-colors
+      author: Bohun
+      changes:
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "1" }
+              - column: { name: color_id, value: "7" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "2" }
+              - column: { name: color_id, value: "4" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "2" }
+              - column: { name: color_id, value: "2" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "2" }
+              - column: { name: color_id, value: "6" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "3" }
+              - column: { name: color_id, value: "3" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "3" }
+              - column: { name: color_id, value: "7" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "4" }
+              - column: { name: color_id, value: "6" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "5" }
+              - column: { name: color_id, value: "4" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "5" }
+              - column: { name: color_id, value: "1" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "5" }
+              - column: { name: color_id, value: "6" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "6" }
+              - column: { name: color_id, value: "4" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "6" }
+              - column: { name: color_id, value: "1" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "6" }
+              - column: { name: color_id, value: "6" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "7" }
+              - column: { name: color_id, value: "3" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "7" }
+              - column: { name: color_id, value: "4" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "7" }
+              - column: { name: color_id, value: "2" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "8" }
+              - column: { name: color_id, value: "3" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "9" }
+              - column: { name: color_id, value: "3" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "10" }
+              - column: { name: color_id, value: "1" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "10" }
+              - column: { name: color_id, value: "4" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "10" }
+              - column: { name: color_id, value: "6" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "10" }
+              - column: { name: color_id, value: "8" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "11" }
+              - column: { name: color_id, value: "1" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "12" }
+              - column: { name: color_id, value: "6" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "13" }
+              - column: { name: color_id, value: "6" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "13" }
+              - column: { name: color_id, value: "7" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "13" }
+              - column: { name: color_id, value: "3" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "14" }
+              - column: { name: color_id, value: "3" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "14" }
+              - column: { name: color_id, value: "1" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "15" }
+              - column: { name: color_id, value: "3" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "16" }
+              - column: { name: color_id, value: "3" }
+        - insert:
+            tableName: product_colors
+            columns:
+              - column: { name: product_id, value: "16" }
+              - column: { name: color_id, value: "2" }

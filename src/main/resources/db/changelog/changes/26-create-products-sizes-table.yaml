@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-product-size-table
+      author: Bohun
+      changes:
+        - createTable:
+            tableName: product_sizes
+            columns:
+              - column:
+                  name: product_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: FK_products_sizes_product
+                    referencedTableName: products
+                    referencedColumnNames: id
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: size_id
+                  type: BIGINT
+                  constraints:
+                    foreignKeyName: FK_products_sizes_size
+                    referencedTableName: sizes
+                    referencedColumnNames: id
+                    primaryKey: true
+                    nullable: false

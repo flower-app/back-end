@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-types
+      author: Bohun
+      changes:
+        - insert:
+            tableName: types
+            columns:
+              - column: { name: name, value: "Fresh" }
+              - column: { name: description, value: "Collected fresh flowers in a bouquet" }
+        - insert:
+            tableName: types
+            columns:
+              - column: { name: name, value: "Potted" }
+              - column: { name: description, value: "Flowers in potted" }
